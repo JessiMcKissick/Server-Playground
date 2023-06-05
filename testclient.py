@@ -17,13 +17,14 @@ UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 
 
 # Send to server using created UDP socket
+while(True):
 
-UDPClientSocket.sendto(bytesToSend, serverAddressPort)
-
-
-msgFromServer = UDPClientSocket.recvfrom(bufferSize)
+    UDPClientSocket.sendto(bytesToSend, serverAddressPort)
 
 
-msg = "Message from Server {}".format(msgFromServer[0])
+    msgFromServer = UDPClientSocket.recvfrom(bufferSize)
 
-print(msg)
+
+    msg = "Message from Server {}".format(msgFromServer[0])
+
+    print(msg)

@@ -45,3 +45,12 @@ while (True):
     # Sending a reply to client
 
     UDPServerSocket.sendto(bytesToSend, address)
+
+
+# Takes object location, direction of movement, and Velocity
+def calculate_loco(object_loc, dir, v):
+    print('test')
+
+# Takes object location, area of movement (a), velocity, and optional variable m
+def collison_detect(obj_loc,a,v,m):
+    print('test detect')
